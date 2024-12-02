@@ -30,4 +30,35 @@ require("mason-lspconfig").setup_handlers {
 				}
 			}
 		}
-	end }
+	end,
+
+	-- ["pyright"] = function()
+	-- 	local lspconfig = require("lspconfig")
+	-- 	lspconfig.pyright.setup {
+	-- 		settings = {
+	-- 			python = {
+	-- 				pythonPath = "py",
+	-- 				venvPath = "/.venv",
+	-- 				analysis = {
+	-- 					-- autoImportCompletions = true,
+	-- 					-- autoSearchPaths =       true,
+	-- 					-- diagnosticMode =        "openFilesOnly",
+	-- 					-- diagnosticSeverityOverrides = ,
+	-- 					-- exclude =               [],
+	-- 					-- extraPaths =            [],
+	-- 					-- ignore =                [],
+	-- 					-- include =               [],
+	-- 					-- logLevel =              "Information",
+	-- 					-- stubPath =              "typings",
+	-- 					-- typeCheckingMode =      "standard",
+	-- 					-- typeshedPaths =         [],
+	-- 					-- useLibraryCodeForTypes =true,
+	-- 				}
+	-- 				-- pyright.disableLanguageServices              default: false
+	-- 				-- pyright.disableOrganizeImports               default: false
+	-- 				-- pyright.disableTaggedHints                   default: false
+	-- 			}
+	-- 		}
+	-- 	}
+	-- end 
+	}

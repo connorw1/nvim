@@ -11,6 +11,11 @@ vim.keymap.set("n", "<leader>ga", ":G add ")
 vim.keymap.set("n", "<leader>gs", ":G checkout -p \"")
 vim.keymap.set("n", "<leader>gc", ":G commit -m \"")
 
+-- quick health check
+vim.keymap.set("n", "<leader>chh", "<cmd>:checkhealth<CR>")
+-- paramaterised
+vim.keymap.set("n", "<leader>ch", ":checkhealth ")
+
 -- quick source
 vim.keymap.set("n", "<leader><leader>", "<cmd>:so<CR>")
 
