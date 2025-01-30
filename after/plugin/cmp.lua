@@ -1,4 +1,3 @@
--- Set up nvim-cmp.
 local cmp = require 'cmp'
 
 cmp.setup({
@@ -26,9 +25,6 @@ cmp.setup({
 	sources = cmp.config.sources({
 		{ name = 'nvim_lsp' },
 		{ name = 'vsnip' }, -- For vsnip users.
-		-- { name = 'luasnip' }, -- For luasnip users.
-		-- { name = 'ultisnips' }, -- For ultisnips users.
-		-- { name = 'snippy' }, -- For snippy users.
 	}, {
 		{ name = 'buffer' },
 	})
@@ -67,9 +63,3 @@ cmp.setup.cmdline(':', {
 -- Set up lspconfig.
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
---require('lspconfig')['lua_ls'].setup {
--- capabilities = capabilities,
---   }
-require('lspconfig')['pyright'].setup {
-	capabilities = capabilities,
-}
